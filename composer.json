@@ -1,0 +1,38 @@
+{
+    "name": "jmf/twig-icon-bundle",
+    "description" : "Symfony bundle for rendering pre-set icons in Twig templates.",
+    "license": "mit",
+    "type": "symfony-bundle",
+    "require": {
+        "php": ">=8.3",
+        "jmf/template-rendering": "^2.0",
+        "symfony/framework-bundle": "^7.0|^8.0",
+        "twig/twig": "^3.0",
+        "webmozart/assert": "^1.0|^2.0"
+    },
+    "require-dev": {
+        "overtrue/phplint": "^9",
+        "phpstan/phpstan": "^2",
+        "phpstan/phpstan-strict-rules": "^2",
+        "phpunit/phpunit": "^12|^13",
+        "rector/rector": "^2",
+        "squizlabs/php_codesniffer": "^4"
+    },
+    "config": {
+        "audit": {
+            "abandoned": "report"
+        },
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Jmf\\Twig\\Extension\\Icon\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jmf\\Twig\\Extension\\Icon\\Test\\": "tests/src"
+        }
+    }
+}

@@ -1,0 +1,24 @@
+jmf_twig_icon:
+
+    #prefix: ''
+
+    #template_path: '@JmfIcon/material/icon.html.twig'
+
+    mapping:
+        back:                   'arrow_back'
+        bookmark:               'check_box_outline_blank'
+        bookmarked:             'check_box'
+        create:                 'add'
+        delete:                 'delete'
+        download:               'download'
+        link:                   'link'
+        print:                  'print'
+        read:                   'visibility'
+        save:                   'save'
+        search:                 'search'
+        swap:                   'swap_horiz'
+        unlink:                 'link_off'
+        update:                 'edit'
+        user:                   'person'
+        warning:                'warning'
+        zoom_in:                'zoom_in'

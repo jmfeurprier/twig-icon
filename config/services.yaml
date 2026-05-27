@@ -1,0 +1,23 @@
+services:
+
+    _defaults:
+        autoconfigure: true
+        autowire:      true
+
+    Jmf\TemplateRendering\TemplateRendererInterface:
+        class: Jmf\TemplateRendering\TemplateRenderer
+
+    Jmf\Twig\Extension\Icon\Repository\IconRepositoryInterface:
+        class: Jmf\Twig\Extension\Icon\Repository\IconRepository
+        arguments:
+            $iconMapping: '%jmf_twig_icon.mapping%'
+
+    Jmf\Twig\Extension\Icon\Rendering\IconRendererInterface:
+        class: Jmf\Twig\Extension\Icon\Rendering\IconRenderer
+        arguments:
+            $templatePath: '%jmf_twig_icon.template_path%'
+
+    Jmf\Twig\Extension\Icon\Twig\IconExtension:
+        arguments:
+            $filesystemLoader: '@twig.loader.filesystem'
+            $functionPrefix:   '%jmf_twig_icon.prefix%'
